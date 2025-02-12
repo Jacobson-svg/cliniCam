@@ -1,6 +1,7 @@
 
 import React from "react"
 
+import ChatAI from "../components/ChatAI.jsx"
 import Header from "../components/Header.jsx"
 import SplashCursor from '../components/SplashCursor'
 import GreenAppointment from '../components/ui/GreenAppointment'
@@ -73,6 +74,9 @@ export default function Home(){
 
     return(
         <>
+            {/* ---------------------- CHAT AI-------------------------- */}
+            <ChatAI />
+
             {/* ---------------------- HEADER-------------------------- */}
             <Header />
 

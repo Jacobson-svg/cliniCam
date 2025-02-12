@@ -65,43 +65,41 @@ export default function HorairesContacts(){
                 h4={"À votre service 7j/7"}
             />
 
-            <section className="horaires_contacts_section row">
-                <div className="part1 col-12 col-lg-5 col-xxl-6 d-flex flex-column align-items-start align-items-xxl-center">
-                    <div className="contact_part1">
-                        <Contact
-                            icon={LocationIcons}
-                            h2={"Notre adresse"}
-                            p={{p1:"Akwa, Douala Cameroon", p2:""}}
-                        />
+            <section>
+                <section className="horaires_contacts_section px-3 d-flex flex-column flex-lg-row px-md-5 w-full">
+                    <div className="part1 col-12 col-lg-5 col-xxl-6 d-flex align-items-md-center flex-column align-items-start align-items-xxl-center">
+                        <div className="contact_part1">
+                            <Contact
+                                icon={LocationIcons}
+                                h2={"Notre adresse"}
+                                p={{p1:"Akwa, Douala Cameroon", p2:""}}
+                            />
+
+                            <Contact
+                                icon={PhoneIcons}
+                                h2={"Numéro de téléphone"}
+                                p={{p1:"+237 696 767 542", p2:"+237 658 123 103"}}
+                            />
+
+                            <Contact
+                                icon={MailIcons}
+                                h2={"Adresse Email"}
+                                p={{p1:"help@clinicam.com", p2:""}}
+                            />
+                        </div>
                     </div>
 
-                    <div className="contact_part1">
-                        <Contact
-                            icon={PhoneIcons}
-                            h2={"Numéro de téléphone"}
-                            p={{p1:"+237 696 767 542", p2:"+237 658 123 103"}}
-                        />
+                    <div className="part2 col-12 col-lg-7 col-xxl-6">
+                        <div className="part21">
+                            <h2 className="mb-3">Laissez-nous prendre soin de vous</h2>
+                            <p className="w-75">Vous avez des questions ? Écrivez-nous et nous vous répondrons dans les plus brefs délais.</p>
+                        </div>
+                        <form>
+                            {inputsElements}
+                        </form>
+                        <a href="#" className="message_btn"><button className="">Envoyez le message <img src={arrow} /></button></a>
                     </div>
-
-                    <div className="contact_part1">
-                        <Contact
-                            icon={MailIcons}
-                            h2={"Adresse Email"}
-                            p={{p1:"help@clinicam.com", p2:""}}
-                        />
-                    </div>
-                </div>
-
-                <div className="part2 col-12 col-lg-7 col-xxl-6">
-                    <div className="part21">
-                        <h2 className="mb-3">Laissez-nous prendre soin de vous</h2>
-                        <p className="w-75">Vous avez des questions ? Écrivez-nous et nous vous répondrons dans les plus brefs délais.</p>
-                    </div>
-                    <form>
-                        {inputsElements}
-                    </form>
-                    <a href="#" className="message_btn"><button className="">Envoyez le message <img src={arrow} /></button></a>
-                </div>
+                </section>
             </section>
 
             <Footer />

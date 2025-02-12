@@ -3,6 +3,7 @@ import Home from "./pages/Home.jsx"
 import NotreEquipe from "./pages/NotreEquipe.jsx"
 import Services from "./pages/Services.jsx"
 import HorairesContacts from "./pages/HorairesContacts.jsx"
+import CliniCamAI from "./pages/CliniCamAI.jsx"
 
 export default function App(){
 
@@ -13,6 +14,7 @@ export default function App(){
                 <Route path="/notre equipe" element={<NotreEquipe />}></Route>
                 <Route path="/services" element={<Services />}></Route>
                 <Route path="/horaires et contacts" element={<HorairesContacts />}></Route>
+                <Route path="/cliniCamAI" element={<CliniCamAI />}></Route>
             </Routes>
         </>
     )

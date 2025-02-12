@@ -858,6 +858,41 @@ footer .section1 div:nth-child(2) div h6{
   }
 }
 
+/* --------------------------------- CHAT AI ------------------------------------------ */
+
+.AISection{
+  background: linear-gradient(to left, var(--secondary-care-blue-500), var(--secondary-deep-trust-500));
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  position: fixed;
+  z-index: 100;
+  right: 40px;
+  bottom: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation-name: rotation;
+  animation-duration: .9s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes rotation{
+  from{
+    rotate: 0deg;
+  }
+  to{
+    rotate: 360deg;
+  }
+}
+
+.AI{
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background-color: #fff;
+}
 
 
 
