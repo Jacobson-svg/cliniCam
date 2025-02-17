@@ -4,8 +4,10 @@
   --deep-black: #151515;
   --pure-white: #fff;
   --secondary-care-blue: #C3E4F5;
-  --secondary-deep-trust-500: #0C2A3D;
   --secondary-deep-trust-400: #334C5C;
+  --secondary-deep-trust-500: #0C2A3D;
+  --secondary-deep-trust-800: #061620;
+  --secondary-deep-trust-900: #040F16;
   --text-black: #222222;
   --secondary-care-blue-500: #289EDA;
   --secondary-care-blue-100: #B2DCF2;
@@ -893,6 +895,72 @@ footer .section1 div:nth-child(2) div h6{
   border-radius: 50%;
   background-color: #fff;
 }
+
+/* --------------------------------- CLINICAM AI ------------------------------------------ */
+
+.clinicamAI{
+  background-color: var(--secondary-deep-trust-500);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: var(--pure-white);
+}
+
+.clinicamAI .AIHeader{
+  box-shadow: 2px 2px 2px rgba(14, 16, 30, 0.467);
+  padding: 20px 24px;
+}
+
+.clinicamAI .AIHeader img{
+  width: 28px;
+  cursor: pointer;
+}
+
+.clinicamAI .AIBody{
+  height: 100%;
+}
+
+.clinicamAI .AIFooter{
+  padding: 20px;
+  
+}
+
+.clinicamAI .AIFooter .AIFooterWrapper{
+  background-color: #040f16c1;
+  
+  width: 80%;
+  border-radius: 32px;
+  padding: 10px 40px;
+  font-size: 1.1rem;
+}
+
+.clinicamAI .AIFooter .AIFooterWrapper img{
+  width: 36px;
+}
+
+.clinicamAI .AIFooter .AIFooterWrapper .inputAI {
+  width: 100% !important;
+}
+
+.clinicamAI .AIFooter .AIFooterWrapper .inputAI input{
+  outline: none;
+  border: none;
+  width: 100%;
+  height: auto;
+  max-height: 92px;
+  min-height: 40px;
+  border-radius: 32px;
+  padding: 8px 20px;
+  resize: none;
+  overflow-y: auto;
+  line-height: 1.5;
+}
+
+.form_wrapper{
+  width: 100%;
+}
+
 
 
 
